@@ -60,3 +60,12 @@ Example server (note, this server is using [felixge's](https://github.com/felixg
 
     server.listen(8080);
 
+## Usage
+
+    postFile(filePath, requestOptions, callback)
+
+  - `filePath` - A string representing the path to a file on disc
+  - `requestOptions` - A string **or** array representing either the URL, or HTTP request options for a request
+  - `callback` - A function that is invoked after completion. The callback function accepts to parameters:
+    - `err` - Represents the error returned (if an error occurred). Otherwise, null
+    - `response` - The HTTP response returned from the request
