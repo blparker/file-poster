@@ -9,6 +9,7 @@ You can install file-poster via `npm`:
     npm install file-poster
 
 ## Example
+Client usage:
 
     var postFile = require('file-poster'),
         url = require('url'),
