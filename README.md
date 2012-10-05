@@ -3,10 +3,14 @@
 ## Purpose
 A simple node.js module to post a file to remote resource simulating a multipart form.
 
-## Download
+## Installation
 You can install file-poster via `npm`:
 
     npm install file-poster
+
+Or manually:
+
+    git clone git://github.com/blparker/file-poster.git file-poster
 
 ## Example
 Client usage:
