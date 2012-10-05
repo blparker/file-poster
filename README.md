@@ -43,21 +43,19 @@ server.on('request', function(req, res) {
                 file.path = __dirname + '/test' + path.extname(file.name);
             })
             .on('field', function(field, value) {
-				fields.push([ field, value ]);
-			})
-			.on('file', function(field, file) {
-				files.push([ field, file ]);
-			})
-			.on('end', function() {
-				res.end();
-			});
-
-		form.parse(req);
+                fields.push([ field, value ]);
+            })
+            .on('file', function(field, file) {
+                files.push([ field, file ]);
+            })
+            .on('end', function() {
+                res.end();
+            });
+	    form.parse(req);
 	}
 	else {
-		res.end();
-	}
+	    res.end();
+        }
+    });
 
-});
-
-server.listen(8080);
+    server.listen(8080);
