@@ -65,9 +65,7 @@ Example server (note, this server is using [felixge's](https://github.com/felixg
     postFile(filePath, requestOptions, callback)
 
   - `filePath` - A string representing the path to a file on disc
-  - `requestOptions` - A string **or** array representing either the URL, or HTTP request options for a request. Example:
-    - `http://example.com/foo.jpg`
-    - `{ protocol: 'http:', slashes: true, host: 'example.com', hostname: 'example.com', href: 'http://example.com/foo.jpg', pathname: '/foo.jpg', path: '/foo.jpg' }`
+  - `requestOptions` - A string **or** array representing either the URL, or HTTP request options for a request
   - `callback` - A function that is invoked after completion. The callback function accepts to parameters:
     - `err` - Represents the error returned (if an error occurred). Otherwise, null
     - `response` - The HTTP response returned from the request
