@@ -33,8 +33,8 @@ Example server (note, this server is using [felixge's](https://github.com/felixg
 
     server.on('request', function(req, res) {
         if(req.method.toLowerCase() === 'post') {
-            var form = new formidable.IncomingForm();
-            var fields = [],
+            var form = new formidable.IncomingForm(),
+                fields = [],
                 files = [];
 
             form
@@ -56,7 +56,6 @@ Example server (note, this server is using [felixge's](https://github.com/felixg
         else {
             res.end();
         }
-
     });
 
     server.listen(8080);
