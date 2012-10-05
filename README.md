@@ -51,8 +51,8 @@ Example server (note, this server is using [felixge's](https://github.com/felixg
                 .on('end', function() {
                     res.end();
                 });
-	        form.parse(req);
-	}
+	    form.parse(req);
+        }
 	else {
 	    res.end();
         }
