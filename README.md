@@ -25,14 +25,14 @@ Client usage:
 
 Example server (note, this server is using [felixge's](https://github.com/felixge) [node-formidable](https://github.com/felixge/node-formidable) library):
 
-
     var http = require('http');
-        formidable = require('formidable');
-        path = require('path');
+    var formidable = require('formidable');
+    var path = require('path');
 
     var server = http.createServer();
 
     server.on('request', function(req, res) {
+
         if(req.method.toLowerCase() === 'post') {
             var form = new formidable.IncomingForm();
             var fields = [],
@@ -51,11 +51,14 @@ Example server (note, this server is using [felixge's](https://github.com/felixg
                 .on('end', function() {
                     res.end();
                 });
-	    form.parse(req);
+
+            form.parse(req);
         }
-	else {
-	    res.end();
+        else {
+            res.end();
         }
+
     });
 
     server.listen(8080);
+
