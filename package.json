@@ -1,8 +1,9 @@
 {
     "name" : "file-poster",
-    "version" : "0.1",
+    "version" : "0.1.1",
     "dependencies" : {
-        "async" : "0.1.18"
+        "async" : "0.1.18",
+        "formidable" : "1.0.x"
     },
     "directories" : {
         "lib" : "./lib"

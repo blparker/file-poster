@@ -6,7 +6,11 @@ var postFile = require('../'),
 var options = url.parse('http://localhost:8080/upload');
 options['method'] = 'POST';
 
-postFile(__dirname + '/kitten.jpg', options, function(err, res) {
+var fields = {
+    foo : 'bar'
+};
+
+postFile(__dirname + '/kitten.jpg', options, fields, function(err, res) {
     assert.equal(res.statusCode, 200);
     assert.equal(err, null);
 });
