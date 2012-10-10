@@ -3,7 +3,7 @@ var postFile = require('../'),
     url = require('url'),
     assert = require('assert');
 
-var options = url.parse('http://localhost:8080/upload');
+var options = url.parse('http://localhost:8888/upload');
 options['method'] = 'POST';
 
 var fields = {

@@ -23,6 +23,7 @@ server.on('request', function(req, res) {
                 files.push([ field, file ]);
             })
             .on('end', function() {
+                console.log(fields);
                 res.end();
             });
 
@@ -33,5 +34,5 @@ server.on('request', function(req, res) {
     }
 });
 
-server.listen(8080);
+server.listen(8888);
 
